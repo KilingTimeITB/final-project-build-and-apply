@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.purple {
+    color: rgb(6, 32, 117);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+/* NAVIGATION */
+#landing {
+    background-color: rgb(15, 167, 205);
+}
+
+nav {
+    padding: 20px 0;
+}
+
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo--img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav__logo--title {
+    font-size: 24px;
+    font-weight: 900;
+    color: #0f2748;
+}
+
+.nav__menu--links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav__menu--link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #0f1f37;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all 0.3s;
+}
+
+.nav__menu--link:hover {
+    color: rgb(21, 60, 255);
+}
+
+.nav__link--primary {
+    background-color: rgb(21, 68, 255);
+    color: white;
+    padding: 12px 32px;
+    border-radius: 50px;
+}
+
+.nav__link--primary:hover {
+    background-color: rgb(17, 64, 204);
+    color: white;
+}
+
+/* HEADER */
+#header {
+    padding: 80px 0;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.header__description {
+    flex: 1;
+}
+
+.header__description h1 {
+    font-size: 48px;
+    color: #101d36;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.header__description--para {
+    margin-top: 32px;
+}
+
+.header__description--para p {
+    font-size: 18px;
+    color: #0f2c54;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.input__wrapper {
+    display: flex;
+    gap: 16px;
+    max-width: 500px;
+}
+
+#email {
+    flex: 1;
+    padding: 20px 32px;
+    border: 2px solid #e5e7eb;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+#email:focus {
+    outline: none;
+    border-color: rgb(37, 21, 255);
+}
+
+button {
+    background-color: rgb(25, 21, 255);
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: rgb(17, 39, 204);
+}
+
+.header__img--wrapper {
+    flex: 1;
+    max-width: 550px;
+}
+
+.header__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__description h1 {
+        font-size: 36px;
+    }
+
+    .nav__menu--links {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
