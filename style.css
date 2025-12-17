@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Inter', system-ui;
     color: #243e63;
+
 }
 
 body {
@@ -20,6 +21,14 @@ body {
     justify-content: space-around; /* spacing */
     align-items: center;  /* vertical alignment */
 }
+.nav__h1{
+    margin: auto;
+    justify-content: space-between;
+    font-weight: 300;
+font-size: large;
+display: flex;
+align-items: center;
+}
 
 .row__narrow {
     width: 100%;
@@ -27,10 +36,12 @@ body {
     margin: 0 auto;
 }
 
-.container {
-    padding: 96px 0;
+.nav___container {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-
 .purple {
     color: #6415ff;
 }
@@ -54,21 +65,31 @@ NAVBAR ↓
 nav {
     display: flex;
     padding-top: 32px;
+    width: 100%;
+    max-width: fit-content;
 }
 
 .nav__row {
     display: flex;
     justify-content: space-between;
+  align-items: center;
 }
 
-.nav__logo {
+  .nav__log{
+margin: auto
+    width: 160px;
+  }
+.nav__logo--img {
+
     display: flex;
     align-items: center;
     margin: 8px 0;
     padding-bottom: 4px;
 }
 
-
+.nav__logo--title{
+    position: relative
+}
 .btn__menu {
     display: none;
     background: transparent;
@@ -80,7 +101,7 @@ nav {
     filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
 }
 
-.modal {
+.menu{
     position: fixed;
     top: 0;
     left: 0;
@@ -97,8 +118,10 @@ nav {
     transform: translateX(300%);
     transition: all 300ms ease;
 }
-
-.modal__links {
+.menu--open{
+    db
+}
+.mune__links {
     width: 100%;
     height: 100%;
     display: flex;
@@ -106,7 +129,7 @@ nav {
     align-items: center;
 }
 
-.modal__link {
+.mune__link {
     color: #1a202c;
     font-size: 18px;
     font-weight: 600;
@@ -116,7 +139,7 @@ nav {
     border-bottom: 2px solid transparent;
 }
 
-.modal__link--primary {
+.mune__link--primary {
     color: #f7fafc;
     padding: 12px 32px;
     background: #6415ff;
@@ -124,7 +147,7 @@ nav {
     border: none;
 }
 
-.menu--open .modal {
+.menu--open .mune {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
@@ -176,7 +199,7 @@ QUALITY WORK ↓
 */
 
 
-#quality .row {
+#quality__work.row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -290,6 +313,7 @@ MOBILE RESPONSIVENESS ↓
     footer {
         padding: 80px 32px;
     }
+
 }
 
 @media(max-width: 768px) {
