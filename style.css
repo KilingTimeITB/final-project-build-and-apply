@@ -10,19 +10,20 @@
 
 }
 
-.nav {
-    height: 80px;
+.landing {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-.nav__row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+.landing__row {
+    justify-content: space-between;
+    align-items: center;
+    justify-content: left;
 }
-.nav__container{
+.landing__container{
     width: 100%;
     max-width: 1200px;
     padding: 0 24px;
@@ -35,9 +36,51 @@
 .purple {
     color: #7342d6;
 }
-.logo {
-   width: 160px; 
+
+.landing__menu--links {
+    justify-content: space-between;
+    display: flex;
+    top: 5px;
+    position: fixed;
+    right: 10px;
+    font-size: xx-large;
+  }
+.landing__menu--link:hover {
+    text-decoration: underline;
+
 }
+.landing__menu--link__primary {
+    border: 2px solid #734273;
+    border-radius: 4px;
+}
+.landing__menu--link__primary:hover {
+    text-decoration: none;
+}
+
+
+.landing__logo--img {
+    width: 160px;
+    top: 5px;
+    left: 5px;
+    justify-content: space-between;
+    display: contents;
+    align-items: center;
+    }
+
+.landing__logo--title {
+    font-size: x-large;
+    display: contents;
+    text-align: inherit;
+    flex-direction: row;
+    align-content: initial;
+    flex-wrap: wrap;
+    top: 2px;
+
+}
+a.landing__menu--link:nth-child(1) {
+    justify-content: space-around;
+  }
+  
 ul{
     display: flex;
 }
@@ -45,50 +88,36 @@ li {
     list-style-type: none;
 }
 
-.nav__links {
-    margin-left: 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color:#7342d6;
-    font-weight: bold;
-    padding: 8px;
-}
-.nav__link:hover {
-    text-decoration: underline;
 
-}
-.nav__link--primary {
-    border: 2px solid #734273;
-    border-radius: 4px;
-}
-.nav__link--primary:hover {
-    text-decoration: none;
-}
 .img {
     width: 100%;
     height: 100%;
     max-height: 50vh;
 }
 .header__container {
-    padding: 24px;
-    width: 100%;
-    max-width: 720px;
-    margin: 0 auto;
-    height: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: larger;
+    }
+    .header__description {
+        width: 50%;
+        }
+#header {
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between
 }
 
 
-
-
-
-
-
-
-
-
+.header__img {
+    width: 100%;
+    justify-content: space-between;
+    display: contents;
+    align-items: flex-end;
+    }
 
 
 
@@ -106,10 +135,13 @@ li {
 
 @media (max-width: 1024px) {
 
-.nav__links {
+.landing__links {
     display: none;
 }
 
 
 
+}
+
+@media (max-width: 780px) {
 }
