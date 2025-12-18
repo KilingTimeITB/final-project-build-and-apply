@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: left;
 }
-.landing__container{
+.landing__container {
     width: 100%;
     max-width: 1200px;
     padding: 0 24px;
@@ -58,7 +58,7 @@
 }
 
 
-.landing__logo--img {
+.landing__logo--img__wrapper {
     width: 160px;
     top: 5px;
     left: 5px;
@@ -94,6 +94,17 @@ li {
     height: 100%;
     max-height: 50vh;
 }
+/*header*/
+/*header*/
+/*header*/
+/*header*/
+/*header*/
+/*header*/
+/*header*/
+/*header*/
+
+
+
 .header__container {
     max-width: 1200px;
     display: flex;
@@ -120,17 +131,311 @@ li {
     }
 
 
+.header__input--wrapper {
+
+
+}
+
+
+.input__email--button {
+
+
+}
+
+
+.header__customers--text {
+
+}
+
+
+.header__customers--img__wrapper {
+
+}
+
+/*features*/
+/*features*/
+/*features*/
+/*features*/
+/*features*/
+/*features*/
+/*features*/
+.features__container {
+
+}
+
+.features__row {
+
+}
 
 
 
 
+.features__title {
+
+}
+
+.features__title--para {
+
+
+}
+
+.features__services {
+
+
+}
+
+.features__services--secure,
+.features__services--customizable,
+.features__services--suupport,
+.features__services--reliable,
+.features__services--fast,
+.features__services--easy,
+.features__services--support {
+
+}
+
+
+.features__services--secure__img,
+.features__services--customizable__img,
+.features__services--suupport__img,
+.features__services--reliable__img,
+.features__services--fast__img,
+.features__services--easy__img {
+
+}
 
 
 
+.features__services--secure__title,
+.features__services--support__title,
+.features__services--customizable__title,
+.features__services--reliable__title,
+.features__services--fast__title,
+.features__services--easy__title {
+
+}
 
 
 
+    .features__services--secure__description,
+    .features__services--support__description,
+    .features__services--customizable__description,
+    .features__services--reliable__description,
+    .features__services--fast__description,
+    .features__services--easy__description {
 
+    }
+
+/*quality__work*/
+/*quality__work*/
+/*quality__work*/
+/*quality__work*/
+/*quality__work*/
+/*quality__work*/
+/*quality__work*/
+
+.quality__work--container {
+
+}
+
+.quality__work--row {
+
+}
+
+.quality__work--description {
+
+}
+
+.learn__more {
+
+}
+
+.quality__work--img {
+
+}
+
+/*steps*/
+/*steps*/
+/*steps*/
+/*steps*/
+/*steps*/
+/*steps*/
+/*steps*/
+.steps__container {
+
+}
+.steps__row {
+
+}
+.steps {
+
+}
+.steps__img--wrapper {
+
+}
+.steps__img {
+
+}
+.steps__container--title {
+
+}
+.steps__list {
+
+}
+.steps__number {
+
+}
+.steps__title {
+
+}
+/*value*/
+/*value*/
+/*value*/
+/*value*/
+/*value*/
+/*value*/
+/*value*/
+
+.value__container {
+
+}
+.value__description {
+
+}
+.value__card {
+
+}
+.value__card--h2 {
+
+}
+.value__icon {
+
+}
+.value__img {
+
+}
+.value__img--wrapper {
+
+}
+/*pricing*/
+/*pricing*/
+/*pricing*/
+/*pricing*/
+/*pricing*/
+/*pricing*/
+/*pricing*/
+/*pricing*/
+/*pricing*/
+.pricing__container {
+
+}
+.pricing__row {
+
+}
+.pricing__cards {
+
+}
+.pricing__card {
+
+}
+.pricing__card--title {
+
+}
+.pricing__title{
+
+}
+
+/*testimonials*/
+/*testimonials*/
+/*testimonials*/
+/*testimonials*/
+/*testimonials*/
+/*testimonials*/
+.testimonials__container {
+
+}
+.testimonials__section--title {
+
+}
+.testimonials__title {
+
+}
+.testimonials__h2 {
+
+}
+.testimonials__ratings {
+
+}
+.testimonials__customer--review {
+
+}
+.testimonials__customer--img {
+
+}
+.testimonials__customer--name {
+
+}
+
+
+
+.sign-up__container__
+
+.sign-up__background {
+
+}
+.sign-up__button--get-started {
+
+}
+.sign-up__button--contact-us {
+
+}
+.sign-up__description {
+
+}
+
+/*footer*/
+/*footer*/
+/*footer*/
+/*footer*/
+/*footer*/
+/*footer*/
+/*footer*/
+/*footer*/
+/*footer*/
+
+.footer {
+
+}
+
+.footer__links {
+
+}
+.footer__container {
+
+}
+.footer__background {
+
+}
+.footer__row {
+
+}
+.footer__logo {
+
+}
+.footer__copyright {
+
+}
+.footer__icons {
+
+}
+
+
+.footer__link--titles {
+
+}
+
+.footer__buttons {
+}
 
 
 @media (max-width: 1024px) {
@@ -139,9 +444,6 @@ li {
     display: none;
 }
 
-
-
-}
 
 @media (max-width: 780px) {
 }
