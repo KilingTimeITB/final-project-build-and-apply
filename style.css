@@ -186,7 +186,7 @@ li {
 
 .features__services--secure,
 .features__services--customizable,
-.features__services--suupport,
+.features__services--support,
 .features__services--reliable,
 .features__services--fast,
 .features__services--easy,
@@ -378,7 +378,9 @@ li {
 
 
 
-.sign-up__container__
+.sign-up__container {
+
+}
 
 .sign-up__background {
 
@@ -438,12 +440,14 @@ li {
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) /*MEDIUM~~tablets small labtops*/
+{
 
 .landing__links {
     display: none;
 }
+}
 
-
-@media (max-width: 780px) {
+@media (max-width: 768px) /*SMALL~~large phones small tablets*/
+ {
 }
