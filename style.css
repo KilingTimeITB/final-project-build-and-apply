@@ -2,42 +2,65 @@
 
 
 
-*{
+*{/*
     padding: 0;
     margin: 0;
-    box-sizing:border-box; 
+    box-sizing:border-box; */
     font-family: 'Inter', system-ui;
    
 }
+
+.nav {
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.nav__row {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+
+}
+
+
+/*
 .purple {
     color: #7342d6;
 }
-.nav {
-height: 70px;
+.nav__row {
+height: 70PX;
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0 16px;
 }
 
-.landing__container {
+*/.landing__container {
     width: 100%;
     max-width: 1200px;
-/*padding: 0 24px;*/
+    padding: 0 24px;
     display: flex;
     justify-content: space-between;
-    /*align-items: center; 
-    margin: 0 auto;*/
-}*/
+    align-items: center; 
+    margin: 0 auto
+}/*
 .nav__menu--links {
-  /*  justify-content: space-between;*/
+    justify-content: space-between;
     display: flex;
-  /*  top: 5px;
+  top: 5px;
     position: fixed;
     right: 10px;
-    font-size: xx-large;*/
+    font-size: xx-large;
   }
-/*.nav__menu--link:hover {
+.nav__menu--link:hover {
     text-decoration: underline;
 
 }
@@ -49,22 +72,26 @@ padding: 0 16px;
     text-decoration: none;
 }
 
-*/
+
 .nav__menu--link {
     list-style: none;
-    padding-left: 16px;
+    padding-left: 0 16px;
+    font-size: 24PX;
+    font-weight: 700;
+    justify-content: space-between;
+    display: flex;
+    align-items: ;
+
 }
 .logo {
-    width: 60px;
+    width: 16px;
+    height: 30%;
 }
 
 .logo--title {
     
 }
-/* a.nav__menu--link:nth-child(1) {
-    justify-content: space-around;
-  }
-  
+ 
 ul{
     display: flex;
 }
@@ -77,7 +104,7 @@ li {
     width: 100%;
     height: 100%;
     max-height: 50vh;
-}*/
+}
 /*header*/
 /*header*/
 /*header*/
@@ -107,7 +134,7 @@ justify-content: center;
     justify-content: space-between;
     display: flex;
   
-    }
+    }*/
 
 
 .header__input--wrapper {
@@ -403,7 +430,6 @@ justify-content: center;
 .footer__logo {
 
 }
-.footer__copyright {
 
 }
 .footer__icons {
@@ -417,6 +443,7 @@ justify-content: center;
 
 .footer__buttons {
 }
+.footer__copyright {
 
 
 @media (max-width: 1024px) /*MEDIUM~~tablets small labtops*/
