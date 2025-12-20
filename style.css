@@ -31,7 +31,7 @@
 }
 
 
-/*
+
 .purple {
     color: #7342d6;
 }
@@ -43,7 +43,7 @@ align-items: center;
 padding: 0 16px;
 }
 
-*/.landing__container {
+landing__container {
     width: 100%;
     max-width: 1200px;
     padding: 0 24px;
@@ -51,7 +51,7 @@ padding: 0 16px;
     justify-content: space-between;
     align-items: center; 
     margin: 0 auto
-}/*
+}
 .nav__menu--links {
     justify-content: space-between;
     display: flex;
@@ -80,7 +80,7 @@ padding: 0 16px;
     font-weight: 700;
     justify-content: space-between;
     display: flex;
-    align-items: ;
+    align-items:center ;
 
 }
 .logo {
@@ -115,9 +115,6 @@ li {
 /*header*/
 
 
-
-
- }
 .header__row {
 
 height: calc(100%-70px);
