@@ -2,10 +2,10 @@
 
 
 
-*{/*
+*{
     padding: 0;
     margin: 0;
-    box-sizing:border-box; */
+    box-sizing:border-box; 
     font-family: 'Inter', system-ui;
    
 }
@@ -55,8 +55,7 @@ landing__container {
 .nav__menu--links {
     justify-content: space-between;
     display: flex;
-  top: 5px;
-    position: fixed;
+     position: fixed;
     right: 10px;
     font-size: xx-large;
   }
@@ -124,14 +123,14 @@ align-items: center;
 justify-content: center;
 }
 
- .sub-header {font-size: 32px;
+ .sub-header {font-size: 32px;}
 
 .header__img {
     width: 50%;
     justify-content: space-between;
     display: flex;
   
-    }*/
+}
 
 
 .header__input--wrapper {
