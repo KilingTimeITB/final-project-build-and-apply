@@ -13,13 +13,13 @@
 <!--landing-->
 <!--landing-->
 <!--landing-->
-   <div class="landing__container">
+   <div class="landing__flex--container">
    <nav class="row">     
-   <figure class="logo" >
-   <img src="assets-20251210T085540Z-3-001/assets/darklogo.svg" alt="">
+   <figure class="nav__logo">
+   <img src="assets-20251210T085540Z-3-001/assets/darklogo.svg" alt="logo">
 </figure>
-   <h1 class="logo__title">Treact
-</h1>
+   <div class="logo__title">Treact
+   </div>
    <div class="nav__menu--links">
    <ul class="nav__menu--links">
    <li><a href="#" class="nav__menu--link">About
@@ -44,40 +44,42 @@
 </div><!--MENU CLOSING-->               
 </nav>
 </div><!--landing closing-->
-   <button class="btn__menu">
-   <i class="fas fa-bars">
-</i>
+<button class="btn__menu" onclick="openMenu()">
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+       class="btn__menu--svg">
+       <line x1="3" y1="12" x2="21" y2="12"></line>
+       <line x1="3" y1="6" x2="21" y2="6"></line>
+       <line x1="3" y1="18" x2="21" y2="18"></line>
+   </svg>
 </button>
-   <button class="btn__menu btn__menu--close">
-   <i class="fas fa-times">
-</i>
+</div>
+</nav>
+<div class="modal">
+<button class="btn__menu btn__menu--close" onclick="closeMenu()">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+   class="light___StyledCloseIcon-lj69nl-14 fASujC">
+   <line x1="18" y1="6" x2="6" y2="18"></line>
+   <line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
 </button>
-<ul>
-   <li class="btn__menu--link"><a href="#">About
-</a>
-</li>
-   <li class="btn__menu--link"><a href="#">Blog
-</a>
-</li>
-   <li class="btn__menu--link"><a href="#">Pricing
-</a>
-</li>
-   <li class="btn__menu--link"><a href="#">Contact
-</a>
-</li>
-   <li class="btn__menu--link"><a href="#">Login
-</a>
-</li>
-   <li class="btn__menu--link"><a href="#">Sign Up
-</a>
-</li>
-</ul>
+<div class="modal__links">
+<a class="modal__link">About</a>
+<a class="modal__link">Blog</a>
+<a class="modal__link">Pricing</a>
+<a class="modal__link">Contact Us</a>
+<a class="modal__link">Login</a>
+<a class="modal__link modal__link--primary">Sign Up</a>
+</div>
+</div>
       <!--LANDING ROW CLOSING-->
      <!--header-->
       <!--header-->
       <!--header-->
       <!--header-->
    <section id="header">
+      <div class="header__container">
    <div class="header__row">
    <h1 class="header__description">Beautiful React Templates 
    <span class="purple"> for you.
@@ -102,6 +104,7 @@
 </figure>
 </div><!--HEADER CUSTOMER CLOSING-->
 </div><!-- ROW CLOSING-->
+</div><!--header container-->
 </section>
       <!--feature-->
       <!--feature-->
@@ -114,8 +117,9 @@
 </span>
 </h2>
    <p class="features__title--para">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+      sed do eiusmod empor incididunt ut labore et dolore
+       magna aliqua.
 </p>
   <div class="feature__services">
    <div class="features__services--secure">
@@ -162,7 +166,7 @@
    <img src="./assets-20251210T085540Z-3-001/assets/fast-icon.svg" alt="">
 </div><!--feature__service  fast__img closing-->
    <div class="feature__service--fast__title">Fast
-</div><!--feature__service  fast__title closing--->
+</div><!--feature__service  fast__title closing-->
    <h2 class="feature__service--fast__description">
       Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
 </h2>
@@ -424,7 +428,7 @@
 <h1> Devolopers all over the world are happily using Treact.
 </h1>
    <button>Get started
-</button>">
+</button>
    <button> Cintact Us
 </button>
 </div>
@@ -516,10 +520,14 @@
 </li>
 </ul>
 </div>
-
-
 </div>
+   <figure class="footer__logo">
+   <img src="assets-20251210T085540Z-3-001\assets\lightlogo.svg">
+</figure>
+   <h1 class="footer__logo--name">Treact Inc.
+</h1>
+<div class="copywrite">© 2018 Treact Inc. All Rights Reserved.
 
-   </section>
+</section>
 </body>
 </html>
