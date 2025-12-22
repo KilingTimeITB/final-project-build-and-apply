@@ -14,11 +14,11 @@
 <!--landing-->
 <!--landing-->
    <div class="landing__flex--container">
-   <nav class="row">     
+   <nav class="nav__row">     
    <figure class="nav__logo">
    <img src="assets-20251210T085540Z-3-001/assets/darklogo.svg" alt="logo">
 </figure>
-   <div class="logo__title">Treact
+   <div class="nav__logo--title">Treact
    </div>
    <div class="nav__menu--links">
    <ul class="nav__menu--links">
@@ -96,10 +96,10 @@
    <div class="header__customers">
    <h2 class="header__customers--text">Our Trusted Customers
 </h2>
-<figure class="customers__logo--img">
+<figure class="header__customers--logo__img">
    <img src="./assets-20251210T085540Z-3-001/assets/customers-logo-strip..png" alt="">
 </figure>
-   <figure class="dedign__illustration">
+   <figure class="header__design--img">
    <img src="./assets-20251210T085540Z-3-001/assets/design-illustration.svg" alt="">
 </figure>
 </div><!--HEADER CUSTOMER CLOSING-->
@@ -220,7 +220,7 @@
    <h2>Easy to Get Started
 </h2>
   <div class="steps__list">
-  <div class="step">
+  <div class="step__1">
   <div class="step__number">01
 </div><!--step__number closing-->
    <h2>Register
@@ -228,7 +228,7 @@
    <p>Create an account with us using Google or Facebook.
 </p>
 </div><!--steps closing-->
- <div class="step">
+ <div class="step__2">
   <div class="step__number">02
 </div><!--steps number closing-->
    <h2>Download
@@ -236,7 +236,7 @@
    <p>Browse and Download the template that you like from the marketplace.
 </p>
 </div><!--step closing-->
-  <div class="step">
+  <div class="step__3">
   <div class="step__number">03
 </div><!--steps number closing-->
    <h2>Run
@@ -248,13 +248,13 @@
 </div><!--steps row colsing-->
 </div><!--steps container closing-->
 </section>
- <!--valus-->
- <!--valus-->
- <!--valus-->
- <!--valus-->
- <!--valus-->
- <!--valus-->
- <!--valus-->
+ <!--values-->
+ <!--values-->
+ <!--values-->
+ <!--values-->
+ <!--values-->
+ <!--values-->
+ <!--values-->
    <section id="value">
    <figure class="value__img--wrapper">
    <img src="assets-20251210T085540Z-3-001/assets/prototype.svg" alt="">
@@ -292,9 +292,9 @@
       <!--pricing-->
       <!--pricing-->
       <!--pricing-->
-   <section id="pricing" class="pricing__plans">
-  <div class="pricing__row">
-   <h2 class="pricing__header">
+   <section id="pricing">
+      <div class="pricing__container">
+  <h2 class="pricing__description">
       Reasonable & Flexible <span class="purple">Plans.
 </span>
 </h2>
@@ -302,16 +302,16 @@
        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
 </p>
-  <div class="pricing__teir">
-   <h3 class="pricing__teir--title">PERSONAL
+<div class="pricing__cards">
+  <div class="pricing__card--personal">
+   <h3 class="pricing__card--title">PERSONAL
 </h3>
-</div><!--pricing teir closing-->
-   <h2 class="pricing__price">$17.99
+ <h2 class="pricing__card--price">$17.99
 </h2>
    <p>Monthly
 </p>
-   <div class="pricing__teir--title">For Individuals
-</div><!--"pricing__teir  titleclosing-->
+   <div class="pricing__card--description">For Individuals
+</div><!--"pricing__card  description titleclosing-->
    <ul>
       <li>30 Templates
 </li>
@@ -324,18 +324,16 @@
 </ul>
    <button>BUY NOW
 </button>
-   <div class="pricing__card--plan">
-</div><!--pricing card closing-->
-   <div class="pricing__teir">
-   <h3 class="pricing__teir--title">BUSINESS
+   </div><!--pricing card personal closing-->
+   <div class="pricing__card--business">
+   <h3 class="pricing__card--title">BUSINESS
 </h3>
-</div><!--pricing teir closing-->
-   <h2 class="pricing__price">$37.99
+   <h2 class="pricing__card--price">$37.99
 </h2>
    <p>Monthly
 </p>
-   <div class="pricing__teir--title">For Small Businesses
-</div><!--pricing teir title closing-->
+   <div class="pricing__card--description">For Small Businesses
+</div><!--pricing__card  descriptione closing-->
    <ul>
       <li>60Templates
 </li>
@@ -348,18 +346,16 @@
 </ul>
    <button>BUY NOW
 </button>
-  <div class="pricing__card--plan">
-</div><!--pricing__card  plan closing-->
-   <div class="pricing__teir">
-   <h3 class="pricing__teir--title">ENTERPRISE
+</div><!--pricing__card  business clossing-->
+  <div class="pricing__card--enterprise">
+   <h3 class="pricing__card--description">ENTERPRISE
 </h3>
-</div><!--pricing teir teir closing-->
  <h2 class="pricing__price">$57.99
 </h2>
    <p>Monthly
 </p>
-   <div class="pricing__teir--title">For Large Companies
-</div><!--ricing__teir  title closing-->
+   <div class="pricing__card--title">For Large Companies
+</div><!--ricing__card title closing-->
    <ul>
       <li>90 Templates
 </li>
@@ -370,9 +366,11 @@
       <li>PersonalAssistance
 </li>
 </ul>
-</div><!--pricing row closing-->
+</div><!--pricing__card  enterprise closing-->
    <button>BUY NOW
 </button>
+</div><!--pricing card row closing-->
+</div><!--pricing containerclosing-->
 </section>
       /*testimonials*/
       /*testimonials*/
@@ -419,10 +417,7 @@
 /*signup*/
 /*signup*/
 /*signup*/
-/*signup*/
-/*signup*/
-/*signup*/
-/*signup*/
+/
    <section id="sign-up">
    <div class="sign-up__container">
 <h1> Devolopers all over the world are happily using Treact.
@@ -436,89 +431,89 @@
 /*footer*/
 /*footer*/
 /*footer*/
-/*footer*/
-/*footer*/
-/*footer*/
+
    <section id="footer">
-<div class="footer__row">
+      <div class="footer__container">
    <div class="footer__lists">
    <h2>MAIN
 </h2>
-   <ul class="main__list">
-   <li><a href="#" class="main__list">Blog
+   <ul class="footer__main--lists">
+   <li><a href="#" class="footer__main--list">Blog
 </a>
 </li>
-   <li><a href="#" class="mail__list">FAQs
+   <li><a href="#" class="footer__main--list">FAQs
 </a>
 </li>
-   <li><a href="#" class="main__list">Support
+   <li><a href="#" class="footer__main--list">Support
 </a>
 </li>
-   <li><a href="#" class="main__list">About Us
+   <li><a href="#" class="footer__main--list">About Us
 </a>
 </li>
 </ul>
    <h2>PRODUCT
 </h2>
-   <ul class="product__list">
-   <li><a href="#" class="product__list">Log In
+   <ul class="footer__product--lists">
+   <li><a href="#" class="footer__product--list">Log In
 </a>
 </li>
-   <li><a href="#"  class="product__list">Personal
+   <li><a href="#"  class="footer__product--list">Personal
 </a>
 </li>
-   <li><a href="#" class="product__list">Businesses
+   <li><a href="#" class="footer__product--list">Businesses
 </a>
 </li>
-   <li><a href="#" class="product__list">Templates
+   <li><a href="#" class="footer__product--list">Templates
 </a>
 </li>
 </ul>
    <h2>PRESS
 </h2>
-   <ul class="press__list">
-   <li><a href="#" class="press__list">Logos
+   <ul class="footer__press--lists">
+   <li><a href="#" class="footer__press--list">Logos
 </a>
 </li>
-   <li><a href="#" class="press__list">Events
+   <li><a href="#" class="footer__press--list">Events
 </a>
 </li>
-   <li><a href="#" class="press__list">Stories
+   <li><a href="#" class="footer__press--list">Stories
 </a>
 </li>
-   <li><a href="#" class="press__lisat">Office
+   <li><a href="#" class="footer__press--list">Office
 </a>
 </li>
 </ul>
    <h2>TEAM
 </h2>
-   <ul class="team__list">
-   <li><a href="#" class="team_list">Career
+   <ul class="footer__team--lists">
+   <li><a href="#" class="footer__team--list">Career
 </a>
 </li>
-   <li><a href="#" class="team__list">Founders
+   <li><a href="#" class="footer__team--list">Founders
 </a>
 </li>
-   <li><a href="#" class="team__list">Culture
+   <li><a href="#" class="footer__team--list">Culture
 </a>
 </li>
-   <li><a href="#" class="team_list">Onboarding
+   <li><a href="#" class="footer__team--list">Onboarding
 </a>   
 </li>
 </ul>
    <h2>LEGAL
 </h2>
-   <ul class="legal__list">
-   <li><a href="#" class="legal_list">GDPR
+   <ul class="footer__legal--lists">
+   <li><a href="#" class="footer__legal--list">GDPR
 </a>
 </li>   
-   <li><a href="#" class="legal_list">Privacy Policy
+   <li><a href="#" class="footer__legal--list">Privacy Policy
 </a>
 </li>
-   <li><a href="#" class="legal_list">Disclaimer
+   <li><a href="#" class="footer__legal--list">Disclaimer
 </a>
 </li>
 </ul>
+</div>
+</div>
 </div>
 </div>
    <figure class="footer__logo">
