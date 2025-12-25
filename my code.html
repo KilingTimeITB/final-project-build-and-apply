@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
     <title>Treact</title>
   </head>
@@ -13,14 +13,18 @@
     <!--landing-->
     <!--landing-->
     <!--landing-->
-    <section id="landing">
+    <div class="landing__flex--container">
       <nav class="nav__row">
-        <div class="nav__container">
         <figure class="nav__logo">
           Treact
-          <img src="assets-20251210T085540Z-3-001/assets/darklogo.svg" class="nav__logo" alt="logo"/>
+          <img
+            src="assets-20251210T085540Z-3-001/assets/darklogo.svg"
+            class="nav__logo"
+            alt="logo"
+          />
         </figure>
         <div class="nav__link--anchor">
+          <div class="nav__link--anchor::after">
             <ul class="nav__link--anchor">
               <li>
                 <a href="#testimonials"
@@ -55,37 +59,57 @@
             </ul>
           </div>
         </div>
+        <!--MENU CLOSING-->
+    
     <!--landing closing-->
     <button class="btn__menu" onclick="openMenu()">
-      <i class="fas fa-bars"></i>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="btn__menu--svg"
+      >
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
     </button>
-  <div class="menu__backdrop">
-    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-<i class="fas fa-times"></i>
- </button>
- <ul class="menu__links">
-  <li class="menu__list">
-    <a href="#" class="menu__link" onclick="closeMenu()" >About</a>
-  </li>
-  <li class="menu__list">
-    <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
-  </li>
-  <li class="menu__list">
-    <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a>
-  </li>
-  <li class="menu__list">
-    <a href="#" class="menu__link" onclick="closeMenu()">Contact onclick="closeMenu()"Us</a>
-  </li>
-  <li class="menu__list">
-    <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
-  </li>
-  <li class="menu__list">
-    <a class="menu__link no-cursor" onclick="closeMenu()" >Sign Up</a>
-  </li>
- </ul>
+
+    <div class="modal">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="light___StyledCloseIcon-lj69nl-14 fASujC"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal__links">
+        <a class="modal__link">About</a>
+        <a class="modal__link">Blog</a>
+        <a class="modal__link">Pricing</a>
+        <a class="modal__link">Contact Us</a>
+        <a class="modal__link">Login</a>
+        <a class="modal__link modal__link--primary">Sign Up</a>
+      </div>
+    </div>
+  </nav>
 </div>
-</nav>
-</section>
     <!--LANDING ROW CLOSING-->
     <!--header-->
     <!--header-->
@@ -99,22 +123,29 @@
             <span class="purple"> for you. </span>
           </h1>
           <p class="description">
-            Our templates are easy to setup,understand and customize.
+            Our templates are easy to setup,understand and customize. <br />
             Fully modular components with a variety of pages and components.
           </p>
           <!--subheader close-->
           <div class="header__input">
-            <input id="email" type="email" placeholder="Your E-mail Address"/>
+            <input id="email" type="email" placeholder="Your E-mail Address" />
             <button class="input__email--button">Get Started</button>
           </div>
           <!--header input close-->
           <div class="header__customers">
             <h2 class="header__customers--text">Our Trusted Customers</h2>
             <figure class="header__customers--logo__img">
-              <img  src="./assets-20251210T085540Z-3-001/assets/customers-logo-strip..png" alt=""/>
+              <img
+                src="./assets-20251210T085540Z-3-001/assets/customers-logo-strip..png"
+                alt=""
+              />
             </figure>
             <figure class="header__design--img">
-              <img src="./assets-20251210T085540Z-3-001/assets/design-illustration.svg" class="header__design--img" alt=""/>
+              <img
+                src="./assets-20251210T085540Z-3-001/assets/design-illustration.svg"
+                class="header__design--img"
+                alt=""
+              />
             </figure>
           </div>
           <!--HEADER CUSTOMER CLOSING-->
@@ -141,7 +172,10 @@
           <div class="feature__services">
             <div class="features__services--secure">
               <figure class="feature__service--secure__img/">
-                <img src="./assets-20251210T085540Z-3-001/assets/shield-icon..svg" alt="secure shielf"/>
+                <img
+                  src="./assets-20251210T085540Z-3-001/assets/shield-icon..svg"
+                  alt="secure shielf"
+                />
               </figure>
               <div class="feature__service--secure__title">Secure</div>
               <h2>
@@ -151,7 +185,10 @@
               <!--features__services  secure closing-->
               <div class="feature__service--support">
                 <div class="feature__service--support__img">
-                  <img src="./assets-20251210T085540Z-3-001/assets/support-icon.svg" alt=""/>
+                  <img
+                    src="./assets-20251210T085540Z-3-001/assets/support-icon.svg"
+                    alt=""
+                  />
                 </div>
                 <!--feature__service  support__img closing-->
                 <div class="feature__service--support__title">Support</div>
@@ -164,7 +201,10 @@
               <!--feature__service  support closing-->
               <div class="feature__service--customizable">
                 <div class="feature__service--customizable__img">
-                  <img src="./assets-20251210T085540Z-3-001/assets/customize-icon.svg" alt=""/>
+                  <img
+                    src="./assets-20251210T085540Z-3-001/assets/customize-icon.svg"
+                    alt=""
+                  />
                 </div>
                 <!--feature__service  customizable__img closing-->
                 <div class="feature__service--customizable__title">
@@ -181,7 +221,10 @@
             <div class="feature__service--reliable">
               <div class="feature__service--reliable__img"></div>
               <!--feature__service  reliable__img closing-->
-              <img src="./assets-20251210T085540Z-3-001/assets/reliable-icon.svg" alt=""/>
+              <img
+                src="./assets-20251210T085540Z-3-001/assets/reliable-icon.svg"
+                alt=""
+              />
               <div class="feature__service--reliable__title">Reliable</div>
               <!--feature__service  reliable__title closing-->
               <h2 class="feature__service--reliable__description">
@@ -192,7 +235,10 @@
             <!--feature__service  reliabl closing-->
             <div class="feature__service--fast">
               <div class="feature__service--fast__img">
-                <img src="./assets-20251210T085540Z-3-001/assets/fast-icon.svg" alt=""/>
+                <img
+                  src="./assets-20251210T085540Z-3-001/assets/fast-icon.svg"
+                  alt=""
+                />
               </div>
               <!--feature__service  fast__img closing-->
               <div class="feature__service--fast__title">Fast</div>
@@ -205,7 +251,10 @@
             <!--feature__service  fast closing-->
             <div class="feature__service--easy">
               <div class="feature__service--easy__img">
-                <img src="./assets-20251210T085540Z-3-001/assets/simple-icon..svg" alt=""/>
+                <img
+                  src="./assets-20251210T085540Z-3-001/assets/simple-icon..svg"
+                  alt=""
+                />
               </div>
               <!--feature__service  easy__img closing-->
               <div class="feature__service--easy__title">Easy</div>
@@ -231,7 +280,10 @@
     <!--quality work-->
     <section id="quality__work">
       <figure class="quality__work--img">
-        <img src="./assets-20251210T085540Z-3-001/assets/hero-screenshot.png" alt=""/>
+        <img
+          src="./assets-20251210T085540Z-3-001/assets/hero-screenshot.png"
+          alt=""
+        />
       </figure>
       <div class="quality__work--row">
         <h2 class="quality__work--description">
@@ -255,7 +307,10 @@
       <div class="steps__container">
         <div class="steps__row">
           <figure class="steps__img--wrapper">
-            <img src="assets-20251210T085540Z-3-001/assets/hero-screenshot.png" alt=""/>
+            <img
+              src="assets-20251210T085540Z-3-001/assets/hero-screenshot.png"
+              alt=""
+            />
           </figure>
           <div class="steps__container--title">Steps</div>
           <!--steps__container  title closing-->
@@ -304,7 +359,7 @@
     <!--values-->
     <section id="value">
       <figure class="value__img--wrapper">
-        <img src="assets-20251210T085540Z-3-001/assets/prototype.svg" alt=""/>
+        <img src="assets-20251210T085540Z-3-001/assets/prototype.svg" alt="" />
       </figure>
       <h2>We Always Abide By Our <span class="purple">Principles. </span></h2>
       <p class="value__description">
@@ -342,8 +397,7 @@
     <!--pricing-->
     <!--pricing-->
     <section id="pricing">
-      <div class="pricing__container">
-        <h1><span class="purple">PRICING</span></h1>
+      <div class="pricing__container"><span class="purple">PRICING</span>
         <h2 class="pricing__description">
           Reasonable & Flexible <span class="purple">Plans. </span>
         </h2>
@@ -358,7 +412,7 @@
             <p>Monthly</p>
             <div class="pricing__card--description">For Individuals</div>
             <!--"pricing__card  description titleclosing-->
-            <ul class="pricing__card--personal--features">
+            <ul>
               <li>30 Templates</li>
               <li>7 Landing Pages</li>
               <li>12 Internal Pages</li>
@@ -373,7 +427,7 @@
             <p>Monthly</p>
             <div class="pricing__card--business--description">For Small Businesses</div>
             <!--pricing__card  descriptione closing-->
-            <ul class="pricing__card--business--features">
+            <ul>
               <li>60Templates</li>
               <li>15 Landing Pages</li>
               <li>22 Internal Pages</li>
@@ -388,7 +442,7 @@
             <p>Monthly</p>
             <div class="pricing__card--enterprise--description">For Large Companies</div>
             <!--ricing__card title closing-->
-            <ul class="pricing__card--enterprise--features">
+            <ul>
               <li>90 Templates</li>
               <li>27 Landing Pages</li>
               <li>37 Internal Pages</li>
@@ -402,11 +456,19 @@
       </div>
       <!--pricing containerclosing-->
     </section>
-
+    <!--testimonials-->
+    <!--testimonials-->
+    <!--testimonials-->
+    <!--testimonials-->
+    <!--testimonials-->
+    <!--testimonials-->
     <section id="testimonials">
       <div class="testimonials__row>">
         <figure class="testimonials__img">
-          <img src="assets-20251210T085540Z-3-001/assets/love-illustration.svg" alt=""/>
+          <img
+            src="assets-20251210T085540Z-3-001/assets/love-illustration.svg"
+            alt=""
+          />
         </figure>
         <h1>Our Clients <span class="purple"> Love Us. </span></h1>
         <div class="customers__rating">
@@ -433,7 +495,10 @@
           veniam, quis nostrud exercitation ullamco.
         </p>
         <figure class="testimonials__custoers--img">
-          <img src="assets-20251210T085540Z-3-001/assets/photo-1494790108377-be9c29b29330.avif" alt=""/>
+          <img
+            src="assets-20251210T085540Z-3-001/assets/photo-1494790108377-be9c29b29330.avif"
+            alt=""
+          />
         </figure>
         <h2 class="testimonials__customers--name">Charlotte Hale</h2>
         <p>Director, Delos Inc.</p>
@@ -500,7 +565,7 @@
       </div>
 
       <figure class="footer__logo">
-        <img src="assets-20251210T085540Z-3-001/assets/lightlogo.svg" alt=""/>
+        <img src="assets-20251210T085540Z-3-001/assets/lightlogo.svg" alt="" />
       </figure>
       <h1 class="footer__logo--name">Treact Inc.</h1>
       <div class="copywrite">2018 Treact Inc. All Rights Reserved.</div>
