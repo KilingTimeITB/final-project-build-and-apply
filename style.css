@@ -35,14 +35,15 @@ ul {
     list-style-type: none;
   }
 
- buttons {
+ buttons { cusor: pointer;
 
  }
 
+button:active  {
+  background-color: dark-purple;
 
 
-
-
+}
 
 
  .landing__flex--container {
@@ -571,11 +572,17 @@ footer
 
 }
 
+@media(max-width:480) {
 
+
+  
+}
 @media(max-width: 768px) {
-  .container{width: 40%;}
+  .container{width: 40%; display:flex;
+            flex-wrap: wrap;}
   .nav__img {position: absolute;
              width: 20px; } 
 .logo { width:30%;}
   .nav__links--menu {
-    visibility: hidden;
+    visibility: hidden; 
+    .pricing__card
