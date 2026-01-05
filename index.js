@@ -1,7 +1,8 @@
-function openMenu() {
-    document.body.classList += " menu--open"
-}
+const hamMenu = document.querySelector('ham__menu');
 
-function closeMenu() {
-    document.body.classList.remove('menu--open')
-}
+const offScreenMenu = document.querySelector('.off__screen--menu');
+
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+});
