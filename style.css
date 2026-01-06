@@ -8,9 +8,6 @@
   list-style: none;
 }
 
-purple {
-  color: #6415ff;
-}
 
 img {
   max-width: 50%;
@@ -41,8 +38,8 @@ max-width: 1280px;
 }
 
 .nav__logo img {
-  width: 30%;
-  height: 30%;
+  width:25%;
+  height:25%;
 }
 
 
@@ -66,13 +63,14 @@ cursor: pointer;
   border: 2px solid #7f7b86;
   border-radius: 6px;
   background-color: #6f36df;
-color:white;
+color:rgb(240, 226, 226);
 }
 .ham__menu {
   height: 50px;
   width: 50px;
   margin-left: auto;
-  position:relative
+  position:relative;
+  
 }
 
 .ham__menu--span {
@@ -84,6 +82,9 @@ color:white;
   left: 50%;
   transform: translate(-50%, -50%); 
   transition: .3s ease;
+  background-color: black;
+  visibility: hidden;
+ 
 }
 .ham__menu span:nth-child(1) {
   top: 25%;
@@ -146,13 +147,13 @@ color:white;
   margin-bottom: 20px;
 }
 
+
 .purple {
-  color: var(--purple);
+  color: #6415ff;
 }
 
 .subheader {
   max-width: 500px;
-  color: var(--gray);
   margin-bottom: 30px;
 }
 
@@ -205,7 +206,7 @@ color:white;
 .features__subtitle {
   max-width: 600px;
   margin: 0 auto 50px;
-  color: var(--gray);
+ color: black;
 }
 
 .features__grid {
@@ -216,7 +217,6 @@ color:white;
 
 .feature__card {
   padding: 30px;
-  border: 1px solid #eee;
   border-radius: 10px;
   text-align: center;
 }
@@ -224,16 +224,19 @@ color:white;
 .feature__icon {
   font-size: 40px;
   margin-bottom: 15px;
+  border-radius: 15%;
 }
 
 .feature__title {
-  color: var(--purple);
+  color: rgba(7, 2, 2, 0.774);
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 600;
+
 }
 
 .feature__description {
-  color: var(--gray);
+  color: rgba(7, 2, 2, 0.719);
 }
 #quality {
   padding: 80px 5%;
@@ -249,7 +252,9 @@ color:white;
 .quality__right {
   flex: 1;
 }
-
+.quality__img {
+  z-index: 2;
+}
 .quality__title {
   font-size: 36px;
   font-weight: 900;
@@ -295,7 +300,9 @@ color:white;
   flex-direction: column;
   gap: 30px;
 }
-
+.steps__img {
+  z-index: 2;
+}
 .step {
   display: flex;
   gap: 20px;
@@ -304,7 +311,7 @@ color:white;
 .step__number {
   font-size: 28px;
   font-weight: 900;
-  color: var(--purple);
+  color: rgba(0, 0, 0, 0.829);
 }
 
 .step__text h3 {
@@ -312,7 +319,7 @@ color:white;
 }
 
 .step__text p {
-  color: var(--gray);
+  color: rgba(0, 0, 0, 0.801);
 }
 #value {
   padding: 80px 5%;
@@ -480,7 +487,7 @@ color:white;
 }
 
 .signup__container {
-  background: var(--purple);
+  background: #6415ff;
   color: #fff;
   padding: 60px;
   border-radius: 10px;
@@ -508,40 +515,53 @@ color:white;
 }
 
 .signup__button--primary {
-  background: #fff;
-  color: var(--purple);
+  color: #fff;
+  background:#f56565;
 }
 
 .signup__button--secondary {
-  background: transparent;
+  background: #6415ff;
   border: 2px solid #fff;
   color: #fff;
 }
 #footer {
-  background: var(--light-gray);
+  background: #6415ff;
   padding: 60px 5%;
+  color: white;
 }
 
 .footer__columns {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  color: white;
 }
 
-.footer__column h4 {
+.footer__column  {
   margin-bottom: 15px;
+  color: white;
+}
+.footer h3 {
+  color: white;
+  padding: 2px;
+  letter-spacing: .6px;
+
+}
+.footer a {
+  color: rgb(233, 235, 238);
 }
 
-.footer__column a {
+.footer__column  {
   display: block;
   text-decoration: none;
-  color: var(--gray);
-  margin-bottom: 8px;
+  color: white;
+margin-bottom: 8px;
 }
 
 .footer__bottom {
   text-align: center;
   margin-top: 20px;
+  color: white;
 }
 
 .footer__logo {
@@ -558,15 +578,26 @@ color:white;
     flex-direction: column;
     text-align: center;
   }
+  .ham__menu--span {
+    visibility: visible;
+    color:black;
+  }
+  .nav__link--anchor {
+   visibility: hidden;
 
+  }
   .features__grid {
     grid-template-columns: repeat(2, 1fr);
+    color: white;
+  
   }
 
   .footer__columns {
     flex-direction: column;
     gap: 40px;
     text-align: center;
+    color: white;
+
   }
 }
 
@@ -582,7 +613,10 @@ color:white;
   .header__input {
     flex-direction: column;
   }
-
+  .ham__menu--span {
+    visibility: visible;
+    color:black;
+  }
   .header__input input,
   .input__email--button {
     width: 100%;
